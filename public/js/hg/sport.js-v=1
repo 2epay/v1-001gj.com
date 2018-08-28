@@ -1,0 +1,68 @@
+function showOrder() {
+
+    document.getElementById('rec_frame').height = 0;
+    document.getElementById('orderFrame').height = 150;
+    rec_frame.document.close();
+    document.getElementById('order_button').className = "ord_on";
+    document.getElementById('record_button').className = "record_btn";
+    var betDiv = document.getElementById('bet_div');
+    var rec5Div = document.getElementById('rec5_div');
+    betDiv.style.display = "";
+    rec5Div.style.display = "none";
+    document.getElementById('pls_bet').style.display = "none";
+    document.getElementById('info_div').style.display = '';
+
+    orderFrame.location.replace("https://static.mzmyb.top/html/bet.html");
+
+    $('#euro_open').show();
+    $('#info_div').show();
+}
+
+function showRec(a) {
+    document.getElementById('rec_frame').height = 85;
+    document.getElementById('order_button').className = "ord_btn";
+    document.getElementById('record_button').className = "record_on";
+
+    var betDiv = document.getElementById('bet_div');
+    var rec5Div = document.getElementById('rec5_div');
+
+    betDiv.style.display = "none";
+    rec5Div.style.display = "";
+
+    //alert(top.uid);
+    rec_frame.location.replace(a);
+
+    $('#euro_open').show();
+    $('#info_div').show();
+}
+
+function onloadSet(w, h, frameName) {
+
+    //alert("width="+w+",height="+h+",frameName="+frameName);
+    //document.getElementById(frameName).style.display="";
+    document.getElementById(frameName).width = 216;
+    document.getElementById(frameName).height = h;
+    //document.getElementById(frameName).height =311;
+    document.getElementById('pls_bet').style.display = "none";
+    if (frameName == "rec_frame") {
+        try {
+            if (tenrec_id != "") {
+                //top.open_Rec="Y";
+                document.getElementById('info_div').style.display = 'none';
+                document.getElementById('switch_web').style.display = "none";
+                document.getElementById('euro_open').style.display = 'none';
+            } else {
+                //top.open_Rec="";
+            }
+        } catch (e) {
+        }
+
+        try {
+            //var gamecountHot=parent.body.getCountHOT();
+            //getCountHOT(countHOT);
+        } catch (e) {
+            document.getElementById('euro_open').style.display = 'none';
+        }
+    }
+    //scroll();
+}

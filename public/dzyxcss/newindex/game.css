@@ -1,0 +1,44 @@
+/* CSS Document */
+/* CSS Document */
+body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,button,input,textarea,section,span{margin:0;padding:0}
+body,button,input,select,textarea{font-family: Microsoft YaHei,\5b8b\4f53,arial,sans-serif;font-size: 12px}
+
+
+.games{background-image: url("images/about_dzyy.png")}
+.game_nav{width: 100%;overflow: hidden}
+.game_nav ul{overflow: hidden}
+.game_nav li{float: left;background-color: #1e4473;margin-right: 20px}
+.game_nav li:last-child{margin-right: 0}
+.game_nav li:hover{background-color: #2f6cb6}
+.game_nav li.on{background-color: #2f6cb6}
+.game_nav a{width: 235px;height: 99px;display: block}
+.game_nav a.ag{background: url("images/tab01.png") no-repeat center}
+.game_nav a.mg{background: url("images/tab02.png") no-repeat center}
+.game_nav a.bbin{background: url("images/tab03.png") no-repeat center}
+.game_nav a.pt{background: url("images/tab04.png") no-repeat center}
+.game_con{width: 100%;margin-top: 20px;}
+.game_con iframe{width: 100%}
+.game_type{width: 100%;height: 50px;line-height: 50px;background: url("images/search_bar_bg.png") repeat-x center;color: #ffe49b}
+.game_type .gm_s_l{float: left;margin-left: 12px}
+.game_type select{background-color: #1a0c04;color: #ffe49b;border: 1px solid #646464;}
+.game_type .gm_s_r{float: right;margin-right: 12px}
+.game_type .gm_s_r .s_text{border: 1px solid #646464;background: #1a0c04;color: #ffe49b;padding: 2px 5px}
+.game_type .gm_s_r .s_btn{background: url("images/btn-search-Btn.gif") no-repeat;width: 70px;height: 26px;border: none;margin-left: 5px;cursor: pointer}
+.game_list ul{overflow: hidden}
+.game_list li{width: 180px;height: 205px;background: url("images/gm_bg.png") no-repeat;float: left;margin: 20px 25px 0 0;text-align: center}
+.game_list li:nth-child(5n+0){margin-right: 0}
+.game_list li a{color: #ffe49b}
+.game_list li a:hover{color: #fe9935}
+.game_list .g_name{margin-top: 5px;height: 35px;line-height: 35px;display: block}
+.game_list .g_img{display: block;margin: 10px 10px 0 10px}
+.game_list .g_img em{display: block}
+.game_list .g_img.mg{height: 133px;border-radius: 5px;padding-top: 7px}
+.game_list .g_img.mg em{width: 146px;height: 120px;margin: 0 auto;background-position: 0 -5px}
+.game_list .g_img.mg:hover em{background-position: -145px -8px;margin-top: 3px}
+.game_list .g_img.pt{height: 130px;border-radius: 5px;padding-top: 10px}
+.game_list .g_img.pt:hover{border: 3px solid #fe9935;height: 127px;padding-top: 7px}
+.game_list .g_img.pt em{width: 140px;height: 120px;margin: 0 auto;background-position: center center}
+.game_list .g_img.img{height: 130px;border-radius: 5px;padding-top: 10px;text-align: center}
+.game_list .g_img.img:hover{border: 3px solid #fe9935;height: 127px;padding-top: 7px}
+.game_list .g_img.img img{width: 140px;height: 120px;border: none}
+

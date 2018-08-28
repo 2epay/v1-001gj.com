@@ -1,0 +1,141 @@
+/* CSS Document */
+/* CSS Document */
+body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,button,input,textarea,section,span{margin:0;padding:0}
+body,button,input,select,textarea{font-family: Microsoft YaHei,\5b8b\4f53,arial,sans-serif;font-size: 12px}
+
+em,i{font-style:normal}
+ol,ul,li{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+img,fieldset{border:0;vertical-align:middle}
+
+
+
+
+.hb_bg{width: 100%;height: 465px;background: url("images/banner-bg.jpg") repeat scroll center;overflow: hidden}
+.hb_bg .haibao{width: 1434px;height: 100%;margin: 0 auto}
+
+.gm_gb{width: 100%;height: 285px;background: url("images/container_bg.jpg") repeat-x;overflow: hidden}
+.gm_gb .gm_con{width: 1020px;height: 100%;margin: 0 auto;background: url("images/container.jpg") no-repeat}
+.gm_con .noticec_bg{width: 840px;height: 30px;margin: 0 auto;background: url("images/newsbg.png") no-repeat;overflow: hidden}
+.noticec_bg .m-left{height: 30px;line-height:25px;font-size:14px;padding:0 30px 0 50px;overflow: hidden;cursor: pointer}
+.noticec_bg .m-left .bd{height: 30px;overflow: hidden}
+.m-left .bd ul{height: 25px;line-height: 25px}
+.m-left .bd li{margin-right: 20px}
+.gm_con .game{width: 960px;margin: 0 auto;overflow: hidden}
+.gm_con .game a{width:240px;height:220px;display: block;float: left}
+
+.ct_bg{width: 100%;height: 97px;background: url("images/container_bg1.jpg") repeat scroll center;overflow: hidden}
+.ct_bg .ct-info{width: 1000px;height: 100%;margin: 0 auto}
+.ct-info .first-btn{width: 240px;height: 40px;margin-top: 28px;float: left;display: block;background-position: 0 0;background-repeat: no-repeat}
+.first-btn.mail{background-image: url("images/btn_mail.png")}
+.first-btn.phone{background-image: url("images/btn_phone.png");margin-left: 13px}
+.first-btn.qq{background-image: url("images/btn_qq.png");margin-left: 13px}
+.first-btn.service{background-image: url("images/btn_service.png");margin-left: 13px}
+.first-btn.mail:hover, .first-btn.phone:hover, .first-btn.qq:hover, .first-btn.service:hover {background-position: right bottom}
+
+
+
+.tool_bar{width: 139px;overflow: hidden}
+.tool_bar .t-top{width: 100%;height: 173px;display:block;background: url("images/kefu1.png") no-repeat}
+.tool_bar .onlinekf{width: 100%;height: 57px;cursor: pointer;display:block;background: url("images/kefu2.png") no-repeat}
+.tool_bar .onlinekf:hover{background: url("images/kefu2-1.png") no-repeat}
+.tool_bar .saoma{width: 100%;height: 139px;cursor: pointer;display: block;background: url("images/kefu3.png") no-repeat}
+.tool_bar .saoma:hover{background: url("images/kefu3-1.png") no-repeat}
+.tool_bar .qqkf{width: 100%;height: 58px;cursor: pointer;display: block;background: url("images/kefu4.png") no-repeat}
+.tool_bar .qqkf:hover{background: url("images/kefu4-1.png") no-repeat}
+.tool_bar .web{width: 100%;height: 54px;cursor: pointer;display: block;background: url("images/kefu5.png") no-repeat}
+.tool_bar .web:hover{background: url("images/kefu5-1.png") no-repeat}
+.tool_bar .close{width: 100%;height: 21px;cursor: pointer;display: block;background: url("images/close.png") no-repeat}
+
+.about_wel{height: 287px;margin: 0 auto;background: url("images/about_zr.png") no-repeat scroll center -20px}
+.about_bg{width: 100%;}
+.about_bg .about_main{width: 1080px;margin: 0 auto;padding-top: 65px;position: relative}
+.about_main .about_top{width: 100%;height: 240px;position: absolute;top: -100px;background: url("") no-repeat scroll center 0}
+.about_top .m-left{width:610px;position: absolute;top: 133px;left: 270px;cursor: pointer;color: #fff;overflow: hidden}
+.about_top .m-left .bd{height: 22px;overflow: hidden}
+.about_top .m-left .bd ul{height: 22px;line-height: 22px}
+.about_top .m-left .bd li{margin-right: 20px}
+.about_main .about_con{width: 100%;background: url("") repeat-y scroll center 0}
+.about_con .about_con_top{width: 100%;height: 0px;background: url("") no-repeat scroll center 0}
+.about_con .sx-box{width: 1000px;margin: 0 auto;padding-top: 6px}
+.about_con .sx-box .sx-box-top{width: 100%;height: 350px;background: url("images/casino_01.png") no-repeat}
+.about_con .sx-box .sx-box-wrap{width: 100%;padding-top: 6px;padding-bottom:58px;overflow: hidden}
+.sx-box-wrap .left, .sx-box-wrap .right{position: relative;height: 495px;text-align: center}
+.sx-box-wrap .left{width: 640px;float: left}
+.sx-box-wrap .right{width: 340px;float: right}
+.sx-box-wrap img{cursor: pointer;z-index: 5;position: absolute;top: 0;left: 0}
+.sx-box-wrap span{z-index: 1;display: block;background-color: #000;color: #fff;text-align: center;font-size: 45px;position: absolute;top: 0;left: 0}
+.about_main .about_bottom{width: 100%;height: 0px;background: url("") no-repeat scroll center 0;position: absolute;bottom: 0}
+
+.lv_list a{background: url("images/live-pho-box.png") no-repeat;width: 324px;height: 259px;float: left;margin-right: 14px;margin-top: 14px}
+.lv_list a:nth-child(3n+0){margin-right: 0}
+.lv_list em{display: block;font-style: normal}
+.lv_list em.pho{width: 301px;height: 161px;margin: 8px 0 0 10px}
+.lv_list em.tit{width: 173px;height: 33px;margin: 2px auto 0}
+.lv_list .ag .pho{background: url("images/live-pho-ag.png") no-repeat}
+.lv_list .ag .tit{background: url("images/live-title-ag.png") no-repeat}
+.lv_list .bbin .pho{background: url("images/live-pho-bbin.png") no-repeat}
+.lv_list .bbin .tit{background: url("images/live-title-bbin.png") no-repeat}
+.lv_list .og .pho{background: url("images/live-pho-og.png") no-repeat}
+.lv_list .og .tit{background: url("images/live-title-og.png") no-repeat}
+.lv_list .ct .pho{background: url("images/live-pho-ct.png") no-repeat}
+.lv_list .ct .tit{background: url("images/live-title-ct.png") no-repeat}
+.lv_list .ds .pho{background: url("images/live-pho-qjd.png") no-repeat}
+.lv_list .ds .tit{background: url("images/live-title-qjd.png") no-repeat}
+.lv_list .mg .pho{background: url("images/live-pho-mg.png") no-repeat}
+.lv_list .mg .tit{background: url("images/live-title-mg.png") no-repeat}
+
+.sports{background-position: center -31px}
+.sports .about_main{padding-top: 15px}
+.sports .about_con{width:1040px;padding: 0 19px;overflow: hidden}
+.sports .left{float: left;width: 240px}
+.sports .left iframe{width: 100%;height: 700px}
+.sports .right{float: right;width: 800px}
+.sports .right iframe{width: 100%;height: 700px}
+.sports .about_con .main{width: 100%}
+.sports .main iframe{width: 100%;height: 730px}
+.sports .s_top{width: 100%}
+.sports .s_top iframe{width: 100%;height: 118px}
+
+.caipiao{background-position: center -31px}
+.caipiao .about_main{padding-top: 15px}
+.caipiao .about_con{overflow: hidden;padding: 0 19px;width: 1040px}
+.caipiao .nav_bar{height: 39px;line-height: 39px;background-color: #625142}
+.caipiao .nav_bar a{color: #fff;padding: 0 10px;display: block;/*margin-right: 4px;*/margin-right: 16px;float: left;text-decoration: none}
+.caipiao .nav_bar a.cur, .caipiao .nav_bar a:hover{background-color: #786759;color: #ffff00}
+.caipiao .con_box{width: 100%}
+.caipiao .con_box iframe{width: 100%}
+
+.help.about_wel{background-image: url("images/about_wel.png")}
+.help .about_text{margin-top:10px;padding: 20px;overflow: hidden}
+.about_text .about_left{width: 203px;height: 581px;float: left;padding:0 30px;background: url("images/about_left.png") no-repeat scroll center 0}
+.about_text .about_left ul{padding: 139px 0 0 75px}
+.about_left li{height:39px;line-height: 28px}
+.about_left li a{font-weight: bold}
+.about_left li a.current_subpage{color: #ff0000}
+.about_text .about_right{width:720px;float: right;padding: 20px 30px 20px 0;color: #fff;overflow-y: auto}
+
+.sale.about_wel{background-image: url("images/about_yh.png")}
+
+.act .about_con .about_con_top{height: 75px}
+.act .about_con .about_text{padding: 0 20px}
+.act .about_text .sale-img{padding: 20px;text-align: center}
+.sale-img img{margin: 5px 0;cursor: pointer}
+.sale-info{display: none;cursor: default}
+
+.games{background-image: url("images/about_dzyy.png")}
+.game_nav{width: 100%;overflow: hidden}
+.game_nav ul{overflow: hidden}
+.game_nav li{float: left;background-color: #1e4473;margin-right: 20px}
+.game_nav li:last-child{margin-right: 0}
+.game_nav li:hover{background-color: #2f6cb6}
+.game_nav li.on{background-color: #2f6cb6}
+.game_nav a{width: 235px;height: 99px;display: block}
+.game_nav a.ag{background: url("images/tab01.png") no-repeat center}
+.game_nav a.mg{background: url("images/tab02.png") no-repeat center}
+.game_nav a.bbin{background: url("images/tab03.png") no-repeat center}
+.game_nav a.pt{background: url("images/tab04.png") no-repeat center}
+.game_con{width: 100%;margin-top: -20px;}
+.game_con iframe{width: 100%}
+
+

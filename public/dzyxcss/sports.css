@@ -1,0 +1,13 @@
+
+body.layout{min-width:1000px}
+
+
+
+ul.game-list{padding:0 6px;text-align:center}
+#lobby>ul.game-list>li{position:relative;display:inline-block;float:left;background-repeat:no-repeat;background-position:center top}
+#lobby>ul.game-list>li:hover{background-position:center bottom}
+
+.game-list li{width:324px;height:450px;margin:0 5px 15px 0}
+.game-list li[game-box="hg"]{background:url('crown.png')}
+.game-list li[game-box="sb"]{background:url('saba.png')}
+.game-list li[game-box="bb"]{background:url('bb_1.png')}

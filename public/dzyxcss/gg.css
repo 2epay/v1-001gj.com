@@ -1,0 +1,9 @@
+﻿.notice_layer{background: #fff;display: none;}
+.notice_layer h3{height: 50px;line-height: 50px;position: relative;background: #ed2d2d;padding: 0 25px;font-size: 18px;color: #fff;font-weight: normal;}
+.notice_layer h3 .close{position: absolute;display: inline-block;width: 20px;height: 20px;background: url(bg-ico.png) no-repeat center center;
+	background-position: -160px -140px;right: 15px;top: 15px;cursor: pointer;}
+.notice_layer .notice_con{height: 345px;background: #f2f2f2;padding: 20px;overflow-y: auto;}
+.notice_layer .notice_con .module{    padding: 10px 20px;background: #f5f5f5;margin-bottom: 20px;
+    border-radius: 4px;border: 1px solid #e6e6e6;}
+.notice_layer .notice_con .module h4{line-height: 32px;font-size: 15px;font-weight: 500;color: #333;}
+.notice_layer .notice_con .module p{line-height: 24px;color: #707070;font-size: 12px;padding: 6px 0px;text-indent: 2em;}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/mobile.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="mobilecomputer-content">
+			<!--头部-->
+			<div class="mobilecomputer-header">
+				<div class="mobilecomputer-header-top">
+					<img src="img/logo/BB.png" id="byelectronicsLogo"/>
+					<div class="byelectronics-search">
+						<input type="text" placeholder="请输入游戏名称" id="byelectronicsFocus" />
+						<img src="img/searh.png" onclick="mobile.search();" />
+					</div>
+				</div>
+				<div class="mobilecomputer-header-bottom">
+					<span>请选择游戏类型：</span>
+					<!--BB电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='BB'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--MG电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='MG'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--AG电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='AG'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--PT电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='PT'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--TTG电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='TTG'>
+						<option type='1' index='0'>热门游戏</option>
+						<option type='2' index='1'>最新游戏</option>
+						<option type='3' index='2'>人气值</option>
+					</select>
+					<!--SA电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='SA'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--DT电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='DT'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--MW电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='MW'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--BG电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='BG'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--BS电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='BS'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--PNG电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='PNG'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--SW电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='SW'>
+						<option type='1' index='0'>全部游戏</option>
+					</select>
+					<!--CQ电子游戏列表-->
+					<select onchange="mobile.filterGameOne(this)" type='CQ'>
+						<option type='1' index='0'>热门游戏</option>
+						<option type='2' index='1'>最新游戏</option>
+						<option type='3' index='2'>人气值</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="mobilecomputer-wrap clearboth">
+				<ul id="mobilecomputerwrap"></ul>
+			</div>
+		</div>
+		<div class="mobilecomputer-fixed clearboth">
+			<div class="mobilecomputer-navtitle" style="display: none;">
+				<ul class="mobilecomputer-navtitle-list clearboth" id="navtitlelist"></ul>
+			</div>
+			<div class="mobilecomputer-triangle">
+					<span class="bot"></span>
+					<span class="top"></span>
+				</div>
+			<div class="mobilecomputer-more" onclick="mobile.slideToggle()">
+				<span>更多</span>
+				<span>游戏</span>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/electronicMobile.js" ></script>
+<script type="text/javascript" src="js/mobile.js" ></script>
+<script>
+	$(function(){
+		mobile.init();
+		$(".mobilecomputer-content").click(function(){
+			$(".mobilecomputer-navtitle").slideUp();
+		})
+	})
+</script>

@@ -1,0 +1,44 @@
+﻿
+#header #gNavi li .subNavi li .hot {
+	position: absolute;
+	top: 5px;
+	right: -3px;
+}
+
+
+#header #gNavi .subNavi {
+	padding: 1px 10px;
+	width: 106px;
+	border: 2px solid #FFD053;
+	background: url(../images/sub_navi_bg.png) repeat left top;
+}
+#header #gNavi .subNavi li {
+	float: none;
+	height: auto;
+	line-height: inherit;
+	margin-right: 0;
+	width: auto;
+	font-size: 13px;
+	border-bottom: 1px dotted #3C3C3C;
+}
+#header #gNavi .subNavi li a {
+	padding:2px 0;
+	height: auto;
+}
+#header #gNavi .navi02 .subNavi li a,
+#header #gNavi .navi03 .subNavi li a,
+#header #gNavi .navi04 .subNavi li a,
+#header #gNavi .navi05 .subNavi li a {
+	color: #FFF;
+}
+
+#header #gNavi .subNavi li a:hover {
+	border-bottom: none;
+	background: none;
+	color: #ffd954;
+}
+#header #gNavi .subNavi li .arrow {
+	position: absolute;
+	top: 9px;
+	left: 60px;
+}

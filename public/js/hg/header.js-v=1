@@ -1,0 +1,187 @@
+function chg_type_class(game_type, num) {
+//已選取：黃字 class="type_on"
+//選取後離開：白字 class="type_out"
+    var tn;
+    var aa = "ftn" + num;
+    for (var i = 1; i < 18; i++) {
+        tn = "ftn" + i;
+        if (tn != aa) {
+            $("#" + tn).removeClass("type_on");
+            $("#" + tn).addClass("type_out");
+        } else {
+            $("#" + tn).removeClass("type_out");
+            $("#" + tn).addClass("type_on");
+        }
+    }
+
+}
+function chg_button_bg(gtype, btn) {
+//  滚球  今日赛事  早盘	
+    if (btn == "today") {
+        $('#today_btn').removeClass("today");
+        $('#today_btn').addClass("today_on");
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "early") {
+        $('#early_btn').removeClass("early");
+        $('#early_btn').addClass("early_on");
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "rb") {
+        $('#rb_btn').removeClass("rb");
+        $('#rb_btn').addClass("rb_on");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "cq") {
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early");
+        $('#cq_btn').addClass("early_on");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "vis") {
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early");
+        $('#vis_btn').addClass("early_on");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "ex") {
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early");
+        $('#ex_btn').addClass("early_on");
+        $('#rdh_btn').removeClass("early_on");
+        $('#rdh_btn').addClass("early");
+    } else if (btn == "rdh") {
+        $('#rb_btn').removeClass("rb_on");
+        $('#rb_btn').addClass("rb");
+        $('#today_btn').removeClass("today_on");
+        $('#today_btn').addClass("today");
+        $('#early_btn').removeClass("early_on");
+        $('#early_btn').addClass("early");
+        $('#cq_btn').removeClass("early_on");
+        $('#cq_btn').addClass("early");
+        $('#vis_btn').removeClass("early_on");
+        $('#vis_btn').addClass("early");
+        $('#ex_btn').removeClass("early_on");
+        $('#ex_btn').addClass("early");
+        $('#rdh_btn').removeClass("early");
+        $('#rdh_btn').addClass("early_on");
+    }
+
+    $("#rbType").html(gtype);
+    if (gtype == 'FT') {
+        $("#rb_btn").html("<a href='javascript:;' onclick=\"chg_button_bg('FT','rb');chg_nav(3);chg_navli(4);chg_url('/hg_sports/index/ft/gq');chg_type_class('ftn',1);\" id='rbyshow'>滚球</a>");
+    } else {
+        $("#rb_btn").html("<a href='javascript:;' onclick=\"chg_button_bg('BK','rb');chg_nav(3);chg_navli(5);chg_url('/hg_sports/index/bb/gq');chg_type_class('ftn',8);\" id='rbyshow'>滚球</a>");
+    }
+}
+function chg_nav(a) {
+//  足球  篮球   早餐足球	
+    var tn;
+    var aa = "nav" + a;
+    for (var i = 1; i < 4; i++) {
+        tn = "nav" + i;
+        if (tn != aa) {
+            $("#" + tn).hide();
+        } else {
+            $("#" + tn).show();
+        }
+    }
+}
+function chg_navli(a) {
+// 独赢 波胆  总入球 半全场  等	
+    var tn;
+    var aa = "navli" + a;
+    for (var i = 1; i < 7; i++) {
+        tn = "navli" + i;
+        if (tn != aa) {
+            $("#" + tn).removeClass('sel');
+            $("#tshow" + i).hide();
+        } else {
+            $("#" + tn).addClass("sel");
+            $("#tshow" + i).show();
+        }
+    }
+}
+function chg_url(a) {
+    parent.showFrame.location = a;
+}
+function showRB(gtypeFT) {
+    if (gtypeFT == 'FT') {
+        parent.showFrame.location.href = 'https://static.mzmyb.top/hg_sports/index/ft/gq';
+        parent.header.chg_button_bg('FT', 'rb');
+        parent.header.chg_nav(3);
+        parent.header.chg_navli(4);
+        parent.header.chg_type_class('ftn', 1);
+    } else {
+        parent.showFrame.location.href = 'https://static.mzmyb.top/hg_sports/index/bb/gq';
+        parent.header.chg_button_bg('BK', 'rb');
+        parent.header.chg_nav(3);
+        parent.header.chg_navli(5);
+        parent.header.chg_type_class('ftn', 8);
+
+    }
+    parent.header.chg_button_bg(gtypeFT, "rb");
+}
+function reloadCrditFunction() {
+    $("#credit").html('加载中...');
+    $.get("/cn/balance", function (result) {
+        $("#credit").html("人民币 " + result);
+    });
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/mobile.css" />
+	</head>
+
+	<body>
+		<div class="mobiles-content">
+			<div class="mobiles-header">
+				<p>热门游戏</p>
+				<div class="swiper-container swiper-container-horizontal">
+					<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+						<div class="swiper-slide">Slide 1</div>
+						<div class="swiper-slide">Slide 2</div>
+						<div class="swiper-slide">Slide 3</div>
+						<div class="swiper-slide">Slide 4</div>
+						<div class="swiper-slide swiper-slide-active">Slide 5</div>
+						<div class="swiper-slide swiper-slide-next">Slide 6</div>
+						<div class="swiper-slide">Slide 7</div>
+						<div class="swiper-slide">Slide 8</div>
+						<div class="swiper-slide">Slide 9</div>
+						<div class="swiper-slide">Slide 10</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+				</div>
+			</div>
+			<div class="mobiles-games">
+				<div class="mobiles-select">
+					<div class="mobiles-selects mobiles-select-one">
+						<select id="navtitlelist" onchange="mobile2.clickTitle(this)"></select>
+					</div>
+					<div class="mobiles-selects mobiles-select-two">
+						<!--BB电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='BB'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--MG电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='MG'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--AG电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='AG'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--PT电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='PT'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--TTG电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='TTG'>
+							<option type='1' index='0'>热门游戏</option>
+							<option type='2' index='1'>最新游戏</option>
+							<option type='3' index='2'>人气值</option>
+						</select>
+						<!--SA电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='SA'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--DT电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='DT'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--MW电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='MW'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--BG电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='BG'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--BS电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='BS'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--PNG电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='PNG'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--SW电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='SW'>
+							<option type='1' index='0'>全部游戏</option>
+						</select>
+						<!--CQ电子游戏列表-->
+						<select onchange="mobile2.filterGameOne(this)" type='CQ'>
+							<option type='1' index='0'>热门游戏</option>
+							<option type='2' index='1'>最新游戏</option>
+							<option type='3' index='2'>人气值</option>
+						</select>
+					</div>
+					<div class="mobiles-search">
+						<input type="text" placeholder="搜寻游戏" id="byelectronicsFocus"/>
+						<img src="img/searh.png" />
+					</div>
+				</div>
+				<!--游戏列表-->
+				<div class="mobiles-list clearboth">
+					<ul id="mobilecomputerwrap"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobilecomputer-fixed clearboth">
+		<div class="mobilecomputer-more" onclick="mobile2.toTop()">
+				<span>回到</span>
+				<span>顶部</span>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/electronicMobile.js"></script>
+<script type="text/javascript" src="js/mobile.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		slidesPerView: 3,
+		paginationClickable: true,
+		spaceBetween: 10
+	});
+	$(function() {
+		mobile2.init();
+	})
+</script>

@@ -1,0 +1,66 @@
+body{background: #002100;}
+.clear{clear: both;}
+
+.top{background:#064009; border-bottom: 1px solid #074808; height: 1.2rem;position: fixed;top: 0;left: 0; width: 100%; z-index:99;}
+.logo{background: url("../images/wap/logo.png")/*tpa=http://hdxpj77.com/images/wap/logo.png*/ no-repeat; background-size: cover; width:4rem; height:100%;display: block;margin: 0 auto;}
+.menumore{background: url("../images/wap/menumore.png")/*tpa=http://hdxpj77.com/images/wap/menumore.png*/ no-repeat; background-size: cover; width: .5rem;height:.5rem;display: block;position:absolute;right: 0.4rem;top: 0.333333rem;transition: all 0.4s}
+.menumore.on{transform:rotate(90deg);-ms-transform:rotate(90deg);-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);}
+
+.pulldown{transition: all 0.3s;overflow: hidden;position:absolute;height: 0; width: 100%;left: 0;top:1.213333rem}
+.pulldown.fadein{height:4.64rem;}
+.pulldown ul li{width: 100%; height: 1.146667rem;line-height: 1.146667rem; background: #002100;text-align: center;border-bottom: 1px solid #074808}
+.pulldown ul li a{color: #d2d2d2;font-size: 0.346667rem;display: block;height: 1.146667rem}
+.pulldown ul li .iconfont{display: inline-block;font-size:0.6rem;color: #d2d2d2;margin-right: 0.2rem}
+
+
+.noticelist{height: 1.12rem;line-height: 1.12rem;background: #002100;color: #fff;font-size:0.4rem;margin-top:1.213333rem; border-bottom:1px solid #0f6014}
+.noticelist span{ display:inline-block; margin:0 0.08rem;}
+.noticelist span i{ font-style:normal; margin:0 0.08rem;color:#efe58e;}
+.noticelist span em{ font-style:normal;margin:0 0.08rem;color:#00ffff;}
+
+.main{ background:#064009;}
+.title{height: 1.106667rem;line-height:1.106667rem;border-bottom: 1px solid #126316}
+.title h2{width:7.44rem;height: 100%;display: block;font-size: 0.4rem;color: #fff100; text-align: center;margin: 0 auto;background: url("../images/wap/titlebg.png")/*tpa=http://hdxpj77.com/images/wap/titlebg.png*/; background-size: cover;}
+.list{}
+.list ul {width:10rem;margin:0 auto; }
+.list ul li{width:5rem;height: 1.746667rem;line-height: 1.746667rem;border-bottom: 1px solid #126316;float: left;position: relative;}
+.list ul li:before{content: "";display: block;border-right: 1px solid #126316;height:1.746667rem;left: 5rem;top: 0;position: absolute;}
+.list ul li:nth-child(even){text-align: right;}
+.list ul li:nth-child(even):before{border-right: none;}
+.list ul li i{display:inline-block;background:url("../images/wap/itemico.png")/*tpa=http://hdxpj77.com/images/wap/itemico.png*/ no-repeat; background-size:cover; width: 1rem;height: 1rem; border-radius:100%;float: left;margin-top: 0.4rem;margin-left: 0.4rem;font-style: normal;font-size:0.48rem;text-align: center;line-height: 1rem;color: #1a1a1a;margin-right:0.25rem;}
+.list ul li a em{ font-style:normal; width:3.2rem; display:block; float:left;height: 1.746667rem;line-height: 1.746667rem; overflow:hidden}
+.list ul li:nth-child(even) i{float: right;margin-left:0.25rem;margin-right: 0.4rem;}
+.list ul li:nth-child(even) em{ float:right;}
+.list ul li a{color: #fff;font-size: 0.4rem; font-weight: bold;display: block;line-height:1.746667rem;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;-webkit-text-overflow:ellipsis;}
+
+.main2{ background:#002100}
+.title2{height:1.333333rem;line-height:1.333333rem;}
+.title2 h2{width:5.333333rem;height: 100%;display: block;font-size: 0.4rem;color: #fff100; text-align: center;margin: 0 auto;background: url("../images/wap/titlebg2.png")/*tpa=http://hdxpj77.com/images/wap/titlebg2.png*/; background-size: cover;}
+
+.link{width: 10rem;margin: 0 auto;}
+.link ul li{width: 4.36rem;height: 1.68rem;border:1px solid #063e06;float: left;margin-left: 0.4rem;margin-bottom: 0.4rem}
+.link ul li a{display: block;height: 1.68rem;line-height: 1.68rem;font-size: 0.4rem;font-weight: bold; color:#d2d2d2}
+.link ul li a i{font-size:0.78rem; font-weight:normal;margin-left:0.4rem;margin-right: 0.32rem; display:inline-block;float: left;color: #d2d2d2;}
+.link ul li a i.mg{ background:url("../images/wap/mg.png")/*tpa=http://hdxpj77.com/images/wap/mg.png*/ no-repeat; background-size:cover; width:0.72rem; height:0.72rem; position:relative; top:0.48rem; margin-right:0.38rem}
+
+.footer{height: 1rem;line-height: 1rem;text-align:center;color: #185818;font-size: 0.32rem;border-top: 1px solid #063e06}
+
+
+.tccon{background:#064009; border:1px solid #064009; width:8.6rem; height:auto;padding:0.56rem 0; border-radius:0.04rem; display: none; position:relative;overflow:hidden;margin: 0 auto;}
+.tccon h2{color: #fff100;font-size:0.4rem;text-align: center;background: url("../images/wap/tctitle.png")/*tpa=http://hdxpj77.com/images/wap/tctitle.png*/ no-repeat; background-size: cover; width: 5.306667rem; height: 0.333333rem;line-height: 0.333333rem;margin: 0 auto}
+.tccon .tctitle{text-align: center;font-weight: bold; height: 1.2rem;line-height: 1.2rem;}
+.tccon .tctitle a{color: #fff; font-size:0.373333rem;}
+.tccon .tctitle a span{display:inline-block;background: url("../images/wap/go.png")/*tpa=http://hdxpj77.com/images/wap/go.png*/ no-repeat; vertical-align: middle; background-size: cover;width: 0.506667rem; height: 0.506667rem;margin-left:0.12rem;}
+.tccon p{line-height: 1.36rem;height: 1.36rem;margin-left:0.64rem;}
+.tccon p input{ width:6.84rem; height:0.933333rem; border:none; border-radius:0.12rem; background: #fff;text-align: left;color: #1e1e1f;font-size:0.4rem;padding-left:0.333333rem}
+.tccon p input::-webkit-input-placeholder{color:#1e1e1f;}
+.tccon p input::-moz-placeholder{color:#1e1e1f;opacity:1;}
+.tccon p input:-moz-placeholder{color:#1e1e1f;opacity:1;}
+.tccon p .yzmimg{position: relative;margin-left:-1.8rem; width:1.546667rem; height: 0.666667rem; vertical-align:middle;}
+.tccon p select{ width:7.14rem; height:0.94333rem;color: #1e1e1f;font-size: 14px; padding-left:0.333333rem; border:none; border-radius:0.12rem;}
+.tccon p select option{}
+.tccon .subbtn{background: url("../images/wap/subbtn.png")/*tpa=http://hdxpj77.com/images/wap/subbtn.png*/ no-repeat; background-size: cover;width:7.146667rem; height:0.946667rem;line-height:0.906667rem; cursor: pointer; color: #361905; font-size: 0.4rem;text-align: center;border: none;padding:0; font-weight:bold;}
+.closebtn{background: url("../images/wap/close.png")/*tpa=http://hdxpj77.com/images/wap/close.png*/ no-repeat; background-size: cover; width:0.666667rem; height:0.666667rem;position: absolute;right:0px;top:0px; display: block; cursor: pointer;}
+
+select{appearance:none;-moz-appearance:none;-webkit-appearance:none;background:#ecd1b4 url("../images/select.png")/*tpa=http://hdxpj77.com/images/select.png*/ right center no-repeat;padding-right:0.533333rem;padding-left:0.093333rem;}
+select::-ms-expand { display: none; }

@@ -1,0 +1,47 @@
+#lobby {
+    width: 1040px;
+    margin: 0 auto;
+}
+#lobby ul.game-list {
+    padding: 0 6px;	
+    text-align: center;
+}
+
+#lobby ul.game-list li {
+    position: relative;
+    width: 293px;
+    height: 446px;
+    margin: 20px;
+	display: inline-block;
+	cursor:pointer;
+}
+#lobby ul.game-list li[game-box="bb"] {
+    background-image: url(images/bb.png);
+}
+
+#lobby ul.game-list li[game-box="hg"] {
+    background-image: url(images/hg.png);
+}
+
+#lobby ul.game-list li[game-box="saba"] {
+    background-image: url(images/saba.png);
+}
+
+#lobby ul.game-list li[game-box="more"] {
+    background-image: url(images/more.png);
+}
+#lobby ul.game-list li:after {
+    content: '进入游戏';
+    position: absolute;
+    bottom: 27px;
+    left: 68px;
+    display: inline-block;
+    width: 161px;
+    height: 38px;
+    color: #0f1544;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    background: url(images/btn_enter.png) no-repeat center top;
+}
+#lobby ul.game-list li:hover:after{background-position-y:bottom}

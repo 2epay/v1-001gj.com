@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="/dianzi/css/byelectronics.css" />	
+		<title></title>
+	</head>
+
+	<body>
+		<!--导航-->
+		<div class="byelectronics-content">
+			<div class="v_out v_out_p clearboth">
+				<div class="prev">
+					<a href="javascript:void(0)"></a>
+				</div>
+				<div class="v_show">
+					<div class="v_cont">
+						<ul id="byelectronicsTitle"></ul>
+					</div>
+				</div>
+				<div class="next">
+					<a href="javascript:void(0)"></a>
+				</div>
+			</div>
+			<div class="byelectronics-wrap">
+				<div class="byelectronics-head clearboth">
+					<img src="/dianzi/img/logo/BB.png" class="byelectronics-logo" id='byelectronicsLogo'/>
+					<div class="byelectronics-search">
+						<input type="text" placeholder="请输入您要查找的游戏" id="byelectronicsFocus" />
+						<img src="/dianzi/img/searh.png" onclick="byelectronics.search();"/>
+					</div>
+				</div>
+				<div class="byelectronics-titlelist" id="byelectronicsTitlelist">
+					<!--BB电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='bbin' style="display: block;">
+						<span class="active" onclick="byelectronics.filterGame('electronicgameBB','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','2',1)">多线老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','3',2)">经典老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','4',3)">机台</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','5',4)">扑克</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','6',5)">轮盘</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','7',6)">特色</span>
+						<span onclick="byelectronics.filterGame('electronicgameBB','8',7)">刮刮乐</span>
+					</div>
+					<!--MG电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='mg'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameMG','1',0)">推荐游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameMG','2',1)">高级老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameMG','3',2)">奖金老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameMG','4',3)">经典老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameMG','5',4)">3D老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameMG','6',5)">特色老虎机</span>
+					</div>
+					<!--AG电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='ag'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameAG','1',0)">全部</span>
+					</div>
+					<!--PT电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='pt'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgamePT','1',0)">老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgamePT','2',1)">街机游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgamePT','3',2)">挂卡游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgamePT','4',3)">桌面纸牌</span>
+					</div>
+					<!--TTG电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='ttg'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameTTG','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameTTG','2',1)">最新游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameTTG','3',2)">人气值</span>
+					</div>
+					<!--SA电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='sa'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameSA','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameSA','2',1)">最新游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameSA','3',2)">人气值</span>
+					</div>
+					<!--DT电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='dt'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameDT','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameDT','2',1)">最新游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameDT','3',2)">人气值</span>
+					</div>
+					<!--WM电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='mw'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameMW','1',0)">热门游戏</span>
+					</div>
+					<!--BG电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='bg'>
+						<span class="active" state='1' onclick="byelectronics.filterGame('electronicgameBG','1',0)">热门游戏</span>
+					</div>
+					<!--BS电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='bs'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameBS','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameBS','2',1)">老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgameBS','3',2)">桌面游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameBS','4',3)">其他游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameBS','5',4)">全部游戏</span>
+					</div>
+					<!--PNG电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='png'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgamePNG','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgamePNG','1',1)">老虎机</span>
+						<span onclick="byelectronics.filterGame('electronicgamePNG','2',2)">桌面游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgamePNG','3',3)">刮刮卡</span>
+						<span onclick="byelectronics.filterGame('electronicgamePNG','4',4)">其他游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgamePNG','5',5)">全部游戏</span>
+					</div>
+					<!--SW电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='sw'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameSW','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameSW','2',1)">最新游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameSW','3',2)">人气值</span>
+					</div>
+					<!--CQ电子游戏列表-->
+					<div class="byelectronics-list clearboth" type='cq'>
+						<span class="active" onclick="byelectronics.filterGame('electronicgameCQ','1',0)">热门游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameCQ','2',1)">最新游戏</span>
+						<span onclick="byelectronics.filterGame('electronicgameCQ','3',2)">人气值</span>
+					</div>
+				</div>
+				<div class="byelectronics-lists clearboth">
+					<ul id="byelectronicsLists"></ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+	</body>
+
+</html>
+<script type="text/javascript" src="/dianzi/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/dianzi/js/electronicgameconfig.js"></script>
+<script type="text/javascript" src="/dianzi/js/byelectronics.js"></script>
+<script type="text/javascript">
+	$(function() {
+		byelectronics.init();
+		$(".next a").click(function() {
+			byelectronics.nextscroll()
+		});
+	})
+</script>

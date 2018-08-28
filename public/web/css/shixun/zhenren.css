@@ -1,0 +1,141 @@
+
+#lobby{
+	width: 1000px;
+    margin: 0 auto;	
+}
+#lobby ul.game-list li {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    width: 235px;
+    height: 270px;
+    margin: 5px 6px;
+	cursor:pointer;
+	text-align:center;
+}
+
+#lobby ul.game-list.scale-transform {
+    display: block;
+	
+    font-size: 0;
+    padding: 9px 0;
+	padding-left:5px;
+    background: #06050a;
+    border: 1px solid #272727;
+}
+#lobby ul.game-list.scale-transform li[game-box="more"] {
+    width: 490px;
+    height: 270px;
+    margin: 5px 2px 0;
+}
+#lobby ul.game-list li[game-box="bg"]:before {
+    background-image: url(images/bg.jpg);
+}
+#lobby ul.game-list li[game-box="bb"]:before {
+    background-image: url(images/bb.jpg);
+}
+#lobby ul.game-list li[game-box="ag"]:before {
+    background-image: url(images/ag.jpg);
+}
+#lobby ul.game-list li[game-box="mg"]:before {
+    background-image: url(images/mg.jpg);
+}
+#lobby ul.game-list li[game-box="cg"]:before {
+    background-image: url(images/cg.jpg);
+}
+#lobby ul.game-list li[game-box="og"]:before {
+    background-image: url(images/og.png);
+}
+#lobby ul.game-list li[game-box="ab"]:before {
+    background-image: url(images/ab.jpg);
+}
+#lobby ul.game-list li[game-box="sa"]:before {
+    background-image: url(images/sa.jpg);
+}
+#lobby ul.game-list li[game-box="sunbet"]:before {
+    background-image: url(images/sunbet.jpg);
+}
+#lobby ul.game-list li[game-box="upcoming"]:before {
+    background-image: url(images/upcoming.png);
+}
+#lobby ul.game-list li[game-box="pt"]:before {
+    background-image: url(images/pt.jpg);
+}
+
+#lobby ul.game-list.scale-transform li:hover:after {
+    bottom: 50px;
+}
+
+#lobby ul.game-list.scale-transform li[game-box="more"]:before {
+    background-image: url(images/linkbb.jpg);
+}
+
+#lobby ul.game-list.scale-transform li[game-box="more"]:after {
+    bottom: 0;
+    background: url(images/more_hov_bg.png) no-repeat center center !important;
+}
+
+#lobby ul.game-list.scale-transform li:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+#lobby ul.game-list li div.text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #383838;
+}
+#lobby ul.game-list.scale-transform li:hover span.enter a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -17px 0 0 -60px;
+    width: 120px;
+    height: 34px;
+    color: #ffcf2e;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid #ffcf2e;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    z-index: 1;
+}
+#lobby ul.game-list.scale-transform li:hover span.enter a {
+    top: 42%;
+}
+#lobby ul.game-list.scale-transform li:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(images/hover_bg.png);
+}
+#banner {
+	width:100%;
+    position: relative;
+    height: 286px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+#banner {
+    background-image: url(images/banner.jpg);
+	background-size: cover;
+}
